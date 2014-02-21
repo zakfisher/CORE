@@ -11,7 +11,7 @@ module.exports = function(grunt) {
                 tasks: ['concat:build_html', 'htmlmin']
             },
             css: {
-                files: ['dev/sass/*.scss', '!dev/sass/index.min.scss'],
+                files: ['dev/sass/*.scss', 'dev/sass/**/*.scss', '!dev/sass/index.min.scss'],
                 tasks: ['compass', 'copy:css']
             },
             js: {

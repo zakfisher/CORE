@@ -1,3 +1,30 @@
+html {
+    height: 100%;
+}
+
 body {
+    @include outer-container;
     font-family: 'Gotham SSm A';
+    height: 100%;
+    position: relative;
+}
+
+@include media($desktopL) {
+
+}
+
+@include media($desktopM) {
+
+}
+
+@include media($desktopS) {
+
+}
+
+@include media($tablet) {
+
+}
+
+@include media($mobile) {
+
 }

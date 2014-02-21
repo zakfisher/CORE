@@ -2,45 +2,14 @@
 
 // Change the grid settings
 $column: 100%;
-$gutter: 0%;
-$grid-columns: 16;
+$gutter: 5%;
+$grid-columns: 12;
 $max-width: 100%;
 $visual-grid: true;
 
 // Define your breakpoints
-//$screen1370: new-breakpoint(max-width 1370px 16);
-//$screen1080: new-breakpoint(max-width 1080px 16);
-//
-//$tablet: new-breakpoint(max-width 768px 16);
-//$mobile: new-breakpoint(max-width 480px 16);
-
-
-//// mobile
-//
-//@media screen and (max-width: 767px) {
-//    @import "responsive-mobile";
-//}
-//
-//// mobile & tablet
-//
-//@media screen and (max-width: 1024px) {
-//    @import "responsive-mobile-tablet";
-//}
-//
-//// tablet
-//
-//@media screen and (min-width: 768px) and (max-width: 1024px)  {
-//    @import "responsive-tablet";
-//}
-//
-//// tablet & desktop
-//
-//@media screen and (min-width: 768px) {
-//    @import "responsive-tablet-desktop";
-//}
-//
-//// desktop
-//
-//@media screen and (min-width: 1025px) {
-//    @import "responsive-desktop";
-//}
+$desktopL: new-breakpoint(min-width 1281px 12);
+$desktopM: new-breakpoint(max-width 1280px 12);
+$desktopS: new-breakpoint(max-width 1024px 12);
+$tablet:   new-breakpoint(max-width 768px 12);
+$mobile:   new-breakpoint(max-width 480px 12);
