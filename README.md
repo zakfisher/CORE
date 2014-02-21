@@ -7,6 +7,6 @@ The core technologies used are:
 * [Bourbon Neat (Grid Framework)](http://neat.bourbon.io/)
 * [Epiphany (PHP REST API Framework)](https://github.com/jmathai/epiphany)
 
-This codebase is meant to be lightweight and highly flexible - you are not forced to any of the existing frameworks, they are merely suggestions, so feel free to rip out or add anything you want.
+This codebase is meant to be lightweight and highly flexible - you are not forced to use any of the existing frameworks, they are merely suggestions, so feel free to rip out or add anything you want.
 
 [Here is a guide on Github markdown to help construct a readme file.](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
