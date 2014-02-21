@@ -23,7 +23,7 @@ module.exports = function(grunt) {
                 tasks: ['copy:images']
             },
             api: {
-                files: ['dev/api/*'],
+                files: ['dev/api/*', 'dev/api/**/*'],
                 tasks: ['copy:api']
             },
             apache: {
@@ -61,7 +61,7 @@ module.exports = function(grunt) {
             },
             api: {
                 expand: true,
-                src: 'api/*',
+                src: 'api/**/*',
                 cwd: 'dev/',
                 dest: 'build/'
             },
