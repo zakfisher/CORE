@@ -36,7 +36,8 @@ module.exports = function(grunt) {
                 src: [
                     'build/js/backbone.min.js',
                     'build/js/concat.js',
-                    'build/js/underscore.min.js'
+                    'build/js/underscore.min.js',
+                    'dev/js/concat.js'
                 ]
             }
         },
@@ -101,6 +102,7 @@ module.exports = function(grunt) {
                 src: [
                     'dev/js/underscore.min.js',
                     'dev/js/backbone.min.js',
+                    'dev/js/helpers.js',
                     'dev/js/index.js'
                 ],
                 dest: 'dev/js/concat.js'
