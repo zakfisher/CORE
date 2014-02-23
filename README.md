@@ -1,4 +1,4 @@
-This repo serves as a starter codebase for data-driven applications.
+This repo serves as a starter codebase for data-driven applications. The 'dev' directory is meant for development, while the 'build' directory is meant to include minified, concatenated scripts for production. In order to set this up, you'll need to create two spoofy domains for testing - dev.site.com, and build.site.com.
 
 The core technologies used are:
 
