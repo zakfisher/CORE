@@ -3,7 +3,7 @@ session_start();
 
 /** Set Environment */
 $uri = explode(".", $_SERVER['HTTP_HOST']);
-define(ENV, ($uri[0] == 'dev') ? 'development' : 'production');
+define(ENV, ($uri[0] == 'dev' || $uri[0] == 'build') ? 'development' : 'production');
 
 require_once('epiphany/src/Epi.php');
 Epi::setSetting('exceptions', true);

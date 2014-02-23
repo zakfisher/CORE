@@ -27,7 +27,7 @@ module.exports = function(grunt) {
                 tasks: ['copy:api']
             },
             apache: {
-                files: ['dev/.htaccess'],
+                files: ['dev/.htaccess', 'dev/api/.htaccess'],
                 tasks: ['copy:apache']
             }
         },
@@ -68,7 +68,7 @@ module.exports = function(grunt) {
             },
             apache: {
                 expand: true,
-                src: '.htaccess',
+                src: ['.htaccess', 'api/.htaccess'],
                 cwd: 'dev/',
                 dest: 'build/'
             }
