@@ -1,4 +1,5 @@
-(function() {
+App = {};
+App.init = function() {
     // Collections
     var Users = Backbone.Collection.extend({
         url: '/users'
@@ -35,4 +36,16 @@
         e.preventDefault();
         router.navigate($(e.currentTarget).attr('href'), true);
     });
-})();
+};
+
+// If testing dev instance, we need to
+// load external scripts because they
+// haven't been concatenated yet.
+if (location.host.split('.')[0] == 'dev') {
+    $.when(
+        $.getScript('/js/underscore.min.js'),
+        $.getScript('/js/backbone.min.js'),
+        $.getScript('/js/helpers.js')
+    ).done(App.init);
+}
+else App.init();
