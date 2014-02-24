@@ -20,7 +20,7 @@ App.init = function() {
     var view = new View;
 
     // Router
-    var Router = Backbone.Extend.Router({
+    var Router = Backbone.Router.extend({
         routes: {
             '' : 'home'
         },
